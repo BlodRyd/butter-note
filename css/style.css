@@ -423,29 +423,33 @@ p {
    HERO SECTION (Первый экран по чек-листу UX)
    ========================================================================== */
 .hero {
-  padding: 48px 0 72px;
+  padding: 40px 0 56px;
   position: relative;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.12fr 0.88fr;
-  gap: 48px;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 44px;
   align-items: center;
+}
+
+.hero-subtitle {
+  margin-bottom: 24px;
 }
 
 .hero-facts {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-  margin: 26px 0 30px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 40px;
 }
 
 .hero-fact {
   background-color: var(--paper-alt);
   border: 1px solid var(--border-warm);
   border-radius: var(--radius-sm);
-  padding: 12px 16px;
+  padding: 14px 16px;
   font-family: var(--font-ui);
   font-size: 1rem;
   line-height: 1.4;
@@ -461,7 +465,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 18px;
+  gap: 14px;
 }
 
 .hero-secondary-link {
@@ -1355,6 +1359,14 @@ body.price-editor-active [data-price] {
     grid-template-columns: 1fr;
   }
 
+  .hero-visual {
+    order: -1;
+  }
+
+  .hero-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .floating-note-pill {
     left: 14px;
     bottom: 14px;
@@ -1398,10 +1410,66 @@ body.price-editor-active [data-price] {
   }
 
   .hero {
-    padding: 28px 0 48px;
+    padding: 18px 0 40px;
   }
 
-  .hero-facts,
+  .hero-grid {
+    gap: 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem;
+    line-height: 1.16;
+    margin-bottom: 10px;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+
+  .hero-visual .arch-frame {
+    border-radius: 20px;
+  }
+
+  .hero-visual .arch-frame img {
+    aspect-ratio: 16 / 9;
+    max-height: 220px;
+    object-position: center 45%;
+  }
+
+  .floating-note-pill {
+    padding: 7px 14px;
+    font-size: 0.9rem;
+    left: 12px;
+    bottom: 12px;
+  }
+
+  .hero-cta-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .hero-cta-group .btn {
+    padding: 13px 10px;
+    font-size: 0.95rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .hero-fact {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
   .grid-2,
   .grid-3,
   .grid-4,
