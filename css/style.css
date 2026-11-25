@@ -1434,9 +1434,9 @@ body.price-editor-active [data-price] {
   }
 
   .hero-visual .arch-frame img {
-    aspect-ratio: 16 / 9;
-    max-height: 220px;
-    object-position: center 45%;
+    aspect-ratio: 4 / 3;
+    max-height: 230px;
+    object-position: center 72%;
   }
 
   .floating-note-pill {
