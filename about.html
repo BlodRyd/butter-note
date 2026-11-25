@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Forum&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
 
@@ -53,10 +53,13 @@
       </div>
       <button type="button" class="btn btn--primary" style="width:100%;" data-open-booking data-booking-format="group_mk">Записаться на мастер-класс</button>
     </nav>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
   </header>
 
   <main>
     <section class="page-hero">
+      <canvas class="scent-mist-canvas" aria-hidden="true"></canvas>
+      <div class="page-hero-word" aria-hidden="true">НОТА МАСЛА</div>
       <div class="container">
         <div class="breadcrumbs"><a href="index.html">Главная</a> / О студии</div>
         <h1>О студии Butter Note («Нота Масла»)</h1>
@@ -71,7 +74,7 @@
       <div class="container split-feature" style="align-items:center;">
         <div>
           <div style="display:flex;align-items:center;gap:18px;margin-bottom:18px;">
-            <img src="images/logo-butter-note-round.png" alt="Круглый логотип Butter Note — Собери свою ноту" title="Официальный знак бренда Butter Note" width="96" height="96" style="border-radius:50%;">
+            <img class="seal-float" src="images/logo-butter-note-round.png" alt="Круглый логотип Butter Note — Собери свою ноту" title="Официальный знак бренда Butter Note" width="96" height="96" style="border-radius:50%;">
             <div>
               <span class="eyebrow" style="margin-bottom:4px;">Миссия и имя бренда</span>
               <h2 style="margin-bottom:0;">Почему «Нота Масла»</h2>
@@ -311,6 +314,6 @@
   </aside>
 
   <script src="js/prices-config.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>

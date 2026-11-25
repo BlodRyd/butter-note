@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Forum&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
 
@@ -54,25 +54,29 @@
       </div>
       <button type="button" class="btn btn--primary" style="width:100%;" data-open-booking data-booking-format="group_mk">Записаться на мастер-класс</button>
     </nav>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
   </header>
 
   <main>
-    <!-- ПЕРВЫЙ ЭКРАН (HERO SECTION): УТП + короткий подзаголовок + 2 кнопки рядом + визуал + плашки снизу -->
-    <section class="hero">
-      <div class="container">
+    <!-- ПЕРВЫЙ ЭКРАН (HERO IMMERSIVE): Canvas дымки + гигантская типографика + УТП + 2 кнопки рядом -->
+    <section class="hero hero--immersive" id="heroImmersive">
+      <canvas id="scentMistCanvas" class="scent-mist-canvas" aria-hidden="true"></canvas>
+      <div class="hero-marquee-word" aria-hidden="true">BUTTER NOTE</div>
+
+      <div class="container hero-stage-container">
         <div class="hero-grid">
           <div class="hero-copy">
-            <span class="eyebrow">Butter Note · Собери свою ноту · СПб</span>
+            <span class="eyebrow eyebrow--light">Butter Note · Собери свою ноту · СПб</span>
             <h1>Создай авторский диффузор для дома за один вечер</h1>
             <p class="lead-text hero-subtitle">
               За 2 часа без опыта соберёшь персональный аромат 100 мл с рецептом на бирке. Всё включено — <strong data-price="group_mk">3 900 ₽</strong>.
             </p>
 
             <div class="hero-cta-group">
-              <button type="button" class="btn btn--primary" data-open-booking data-booking-format="group_mk">
+              <button type="button" class="btn btn--cream" data-open-booking data-booking-format="group_mk">
                 Записаться на МК
               </button>
-              <a href="masterclasses.html#tripwire" class="btn btn--outline">
+              <a href="masterclasses.html#tripwire" class="btn btn--outline-light">
                 <span>Сет за <span data-price="tripwire">490 ₽</span></span>
               </a>
             </div>
@@ -86,7 +90,7 @@
           </div>
         </div>
 
-        <div class="hero-facts" aria-label="Ключевые условия мастер-класса">
+        <div class="hero-facts hero-facts--dark" aria-label="Ключевые условия мастер-класса">
           <div class="hero-fact">
             <strong><span data-price="group_mk">3 900 ₽</span> / чел.</strong>
             Все материалы и упаковка включены
@@ -103,6 +107,130 @@
             <strong>Опыт не нужен</strong>
             Пробные ноты и помощь на каждом шаге
           </div>
+        </div>
+
+        <a href="#storyTrack" class="hero-scroll-cue">
+          <span>Листай, чтобы раскрыть аромат</span>
+          <span class="hero-scroll-line" aria-hidden="true"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 3-АКТНЫЙ ИММЕРСИВНЫЙ СТОРИТЕЛЛИНГ (В СТИЛЕ РЕФЕРЕНСА) -->
+    <section class="story-track" id="storyTrack" aria-label="Погружение в аромат Butter Note">
+      <div class="story-sticky">
+        <!-- АКТ 1: Лёгкая дымка и архитектурная типографика -->
+        <article class="story-act story-act--mist" data-act="0">
+          <div class="story-mist-bg" aria-hidden="true"></div>
+          <div class="story-tracked-word" id="storyWordOne" aria-hidden="true">Н О Т А &nbsp; М А С Л А</div>
+          <div class="container story-act-inner">
+            <span class="eyebrow">Акт I · Раскрытие</span>
+            <h2>Твой дом не должен пахнуть как у всех</h2>
+            <p class="story-lead">
+              35+ парфюмерных мононот — от спелой черники и цейлонской корицы до голубой гортензии и сливочной тишины. Ты собираешь формулу, которой нет больше ни у кого.
+            </p>
+          </div>
+        </article>
+
+        <!-- АКТ 2: Глубокий кинематографичный зум процесса -->
+        <article class="story-act story-act--depth" data-act="1">
+          <div class="story-depth-media" aria-hidden="true">
+            <img id="storyDepthImg" src="images/process-sozdaniya-diffuzora-spb.jpg" alt="Процесс смешивания масел пипеткой на мастер-классе Butter Note" title="Смешивание нот на мастер-классе">
+          </div>
+          <div class="story-depth-scrim" aria-hidden="true"></div>
+          <div class="container story-act-inner story-act-inner--light">
+            <span class="eyebrow eyebrow--light">Акт II · Ритуал за 2 часа</span>
+            <h2>Смешай. Вдохни. Оставь дома</h2>
+            <div class="story-pillars">
+              <div class="story-pillar" data-pillar="0">
+                <span>01</span>
+                <h3>Пробы на блоттерах</h3>
+                <p>Слушаешь чистые ноты и черновые сочетания под подсказки ароматиста.</p>
+              </div>
+              <div class="story-pillar" data-pillar="1">
+                <span>02</span>
+                <h3>Баланс пирамиды</h3>
+                <p>Выстраиваешь верх, сердце и базу без резкости и приторности.</p>
+              </div>
+              <div class="story-pillar" data-pillar="2">
+                <span>03</span>
+                <h3>Флакон 100 мл и бирка</h3>
+                <p>Записываешь рецепт на кремовую бирку, чтобы повторить в любой момент.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- АКТ 3: Горизонтальная 3D-лента 4 коллекций при вертикальном скролле -->
+        <article class="story-act story-act--ribbon" data-act="2">
+          <div class="story-ribbon-bg" aria-hidden="true">
+            <img src="images/interyer-studii-aromatov-spb.jpg" alt="Атмосферная студия ароматов Butter Note в Петербурге" title="Студия Butter Note">
+          </div>
+          <div class="story-depth-scrim story-depth-scrim--botanical" aria-hidden="true"></div>
+          <div class="container story-act-inner story-act-inner--light" style="width:100%;">
+            <div class="story-ribbon-head">
+              <span class="eyebrow eyebrow--light">Акт III · Четыре палитры</span>
+              <h2>Выбери настроение, которое останется в доме</h2>
+            </div>
+
+            <div class="story-ribbon-viewport">
+              <div class="story-ribbon-track" id="storyRibbonTrack">
+                <div class="ribbon-card">
+                  <img src="images/yagodno-pryanaya-kollektsiya-aromatov.jpg" alt="Ягодный вечер — черника и малина" title="Ягодный вечер">
+                  <div class="ribbon-card-body">
+                    <span class="ribbon-num">01</span>
+                    <h3>Ягодный вечер</h3>
+                    <p>Черника, спелая малина, ежевика и свежий лист смородины.</p>
+                  </div>
+                </div>
+
+                <div class="ribbon-card">
+                  <img src="images/diffuzor-butter-note-hero.jpg" alt="Корица и дым — пряные и ванильные ноты" title="Корица и дым">
+                  <div class="ribbon-card-body">
+                    <span class="ribbon-num">02</span>
+                    <h3>Корица и дым</h3>
+                    <p>Цейлонская корица, стручки ванили, тёплый дым и сандал.</p>
+                  </div>
+                </div>
+
+                <div class="ribbon-card">
+                  <img src="images/gortenziya-slivochnye-noty-aromat.jpg" alt="Голубая гортензия — прохладные цветы и сливочные акценты" title="Голубая гортензия">
+                  <div class="ribbon-card-body">
+                    <span class="ribbon-num">03</span>
+                    <h3>Голубая гортензия</h3>
+                    <p>Прохладная гортензия, глянцевый антуриум и белый мускус.</p>
+                  </div>
+                </div>
+
+                <div class="ribbon-card">
+                  <img src="images/podarochnyy-nabor-diffuzor-butter-note.jpg" alt="Сливочная тишина — мягкая гурманская композиция" title="Сливочная тишина">
+                  <div class="ribbon-card-body">
+                    <span class="ribbon-num">04</span>
+                    <h3>Сливочная тишина</h3>
+                    <p>Тёплая сливочная база, бобы тонка, миндаль и светлый кедр.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Алмазный компас прокрутки (в стиле видео-референса) -->
+        <div class="story-compass" aria-label="Навигация по актам">
+          <button type="button" class="compass-step is-active" data-goto-act="0">
+            <span class="compass-diamond" aria-hidden="true"></span>
+            <span>01 · Дымка</span>
+          </button>
+          <span class="compass-line" aria-hidden="true"><span id="storyCompassBar"></span></span>
+          <button type="button" class="compass-step" data-goto-act="1">
+            <span class="compass-diamond" aria-hidden="true"></span>
+            <span>02 · Ритуал</span>
+          </button>
+          <span class="compass-line" aria-hidden="true"></span>
+          <button type="button" class="compass-step" data-goto-act="2">
+            <span class="compass-diamond" aria-hidden="true"></span>
+            <span>03 · Палитры</span>
+          </button>
         </div>
       </div>
     </section>
@@ -477,6 +605,6 @@
   </aside>
 
   <script src="js/prices-config.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>
