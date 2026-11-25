@@ -1953,7 +1953,7 @@ html.motion-ready [data-reveal].is-revealed {
   top: 0;
   height: 100vh;
   min-height: 620px;
-  overflow: hidden;
+  overflow: clip;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2127,7 +2127,7 @@ html.motion-ready [data-reveal].is-revealed {
 
 .story-ribbon-viewport {
   width: 100%;
-  overflow: hidden;
+  overflow: clip;
   padding: 8px 0 14px;
 }
 
