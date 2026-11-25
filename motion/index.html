@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Butter Note («Нота Масла») — мастер-класс по созданию диффузора для дома в СПб</title>
+  <meta name="description" content="Камерная студия ароматов для дома в Санкт-Петербурге. Создай авторский ароматический диффузор 100 мл за 2 часа без опыта. Уютные мастер-классы, рецепты на бирке и бесплатный гид по ароматам.">
+  <meta name="keywords" content="мастер-класс диффузор СПб, создать аромат для дома, студия ароматов Санкт-Петербург, диффузор своими руками, Butter Note, Нота Масла, подарок впечатление СПб">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+  <link rel="icon" type="image/svg+xml" href="../images/favicon-butter-note.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=motion1">
+</head>
+<body>
+
+  <!-- ШАПКА САЙТА -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-link" aria-label="Butter Note — на главную">
+        <img src="../images/logo-butter-note-dark.svg" alt="Логотип Butter Note — флакон диффузора с палочками и каплей масла" title="Butter Note («Нота Масла»)" class="brand-logo" width="48" height="48">
+        <span class="brand-text">
+          <span class="brand-name">Butter Note</span>
+          <span class="brand-activity">Нота Масла · студия ароматов для дома, СПб</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Основное меню">
+        <a href="index.html" class="nav-link" aria-current="page">Главная</a>
+        <a href="masterclasses.html" class="nav-link">Мастер-классы</a>
+        <a href="aroma-guide.html" class="nav-link">Гид по ароматам</a>
+        <a href="gifts-events.html" class="nav-link">Подарки и события</a>
+        <a href="about.html" class="nav-link">О студии</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn btn--primary btn--sm" data-open-booking data-booking-format="group_mk">Записаться</button>
+        <button type="button" id="burgerBtn" class="burger-btn" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileNav">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 7H20M4 12H20M4 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobileNav" class="mobile-nav" aria-label="Мобильное меню">
+      <div class="mobile-nav-list">
+        <a href="index.html" class="nav-link" aria-current="page">Главная</a>
+        <a href="masterclasses.html" class="nav-link">Мастер-классы</a>
+        <a href="aroma-guide.html" class="nav-link">Гид по ароматам</a>
+        <a href="gifts-events.html" class="nav-link">Подарки и события</a>
+        <a href="about.html" class="nav-link">О студии</a>
+      </div>
+      <button type="button" class="btn btn--primary" style="width:100%;" data-open-booking data-booking-format="group_mk">Записаться на мастер-класс</button>
+    </nav>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <!-- ПЕРВЫЙ ЭКРАН (HERO SECTION): УТП + короткий подзаголовок + 2 кнопки рядом + визуал + плашки снизу -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Butter Note · Собери свою ноту · СПб</span>
+            <h1>Создай авторский диффузор для дома за один вечер</h1>
+            <p class="lead-text hero-subtitle">
+              За 2 часа без опыта соберёшь персональный аромат 100 мл с рецептом на бирке. Всё включено — <strong data-price="group_mk">3 900 ₽</strong>.
+            </p>
+
+            <div class="hero-cta-group">
+              <button type="button" class="btn btn--primary" data-open-booking data-booking-format="group_mk">
+                Записаться на МК
+              </button>
+              <a href="masterclasses.html#tripwire" class="btn btn--outline">
+                <span>Сет за <span data-price="tripwire">490 ₽</span></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="arch-frame">
+              <img src="../images/diffuzor-butter-note-hero.jpg" alt="Янтарный флакон ароматического диффузора Butter Note с чёрными палочками, бордовым антуриумом и корицей" title="Ароматический диффузор Butter Note в интерьере">
+            </div>
+            <div class="floating-note-pill">«Твой дом пахнет тобой»</div>
+          </div>
+        </div>
+
+        <div class="hero-facts" aria-label="Ключевые условия мастер-класса">
+          <div class="hero-fact">
+            <strong><span data-price="group_mk">3 900 ₽</span> / чел.</strong>
+            Все материалы и упаковка включены
+          </div>
+          <div class="hero-fact">
+            <strong>Флакон 100 мл</strong>
+            В 2–3 раза больше стандартных 30–50 мл
+          </div>
+          <div class="hero-fact">
+            <strong>2 часа · 2–8 гостей</strong>
+            Камерная атмосфера без спешки
+          </div>
+          <div class="hero-fact">
+            <strong>Опыт не нужен</strong>
+            Пробные ноты и помощь на каждом шаге
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- УНИКАЛЬНОЕ ТОРГОВОЕ ПРЕДЛОЖЕНИЕ (УТП) -->
+    <section class="section section--paper-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Позиционирование студии</span>
+          <h2>Не магазин свечей и не конвейер: почему в Butter Note получается у каждого</h2>
+          <p class="lead-text">Мы соединили доступную нишевую парфюмерию своими руками и тёплую гурманскую эстетику: замедлись, вдохни и собери формулу именно для своего пространства.</p>
+        </div>
+
+        <div class="grid-4">
+          <article class="card">
+            <div>
+              <span class="card-tag">01 · Авторство</span>
+              <h3>Нота за нотой</h3>
+              <p>Ты не выбираешь готовую отдушку из канистры, а сама смешиваешь верхние, сердечные и базовые ноты из коллекции студии.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div>
+              <span class="card-tag">02 · Объём 100 мл</span>
+              <h3>Звучит 3–4 месяца</h3>
+              <p>Большой янтарный флакон 100 мл служит заметно дольше мини-форматов 30–50 мл и становится акцентом интерьера.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div>
+              <span class="card-tag">03 · Рецепт на бирке</span>
+              <h3>Можно повторить</h3>
+              <p>Мы записываем точные пропорции капель на фирменной кремовой бирке — ты всегда сможешь обновить свой любимый аромат.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div>
+              <span class="card-tag">04 · Безопасность</span>
+              <h3>Без открытого огня</h3>
+              <p>Диффузор работает без электричества и свечей, а перед занятием мы обязательно учитываем аллергии и чувствительность к запахам.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ОСНОВНЫЕ РУБРИКИ САЙТА -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Разделы Butter Note</span>
+          <h2>Выбери, с чего начать знакомство с миром ароматов</h2>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <div>
+              <div class="card-media">
+                <img src="../images/yagodno-pryanaya-kollektsiya-aromatov.jpg" alt="Ягоды черники и малины, палочки корицы и стручки ванили в стиле Butter Note" title="Коллекция ягодно-пряных ароматов Butter Note">
+              </div>
+              <span class="card-tag">Рубрика 1</span>
+              <h3>Мастер-классы и афиша</h3>
+              <p>Групповые вечера, свидания для пар, онлайн-формат с набором, 4 авторские линейки и сет-знакомство за <span data-price="tripwire">490 ₽</span>.</p>
+            </div>
+            <a href="masterclasses.html" class="btn btn--outline">Смотреть расписание</a>
+          </article>
+
+          <article class="card">
+            <div>
+              <div class="card-media">
+                <img src="../images/gortenziya-slivochnye-noty-aromat.jpg" alt="Голубая гортензия, сливочные текстуры и прозрачные флаконы с парфюмерными эссенциями" title="Гид по ароматам и парфюмерной пирамиде">
+              </div>
+              <span class="card-tag">Рубрика 2</span>
+              <h3>Гид по ароматам и инфографика</h3>
+              <p>Как устроена парфюмерная пирамида, сколько палочек поставить в спальню и как ухаживать за диффузором, чтобы он звучал дольше.</p>
+            </div>
+            <a href="aroma-guide.html" class="btn btn--outline">Изучить гид</a>
+          </article>
+
+          <article class="card">
+            <div>
+              <div class="card-media">
+                <img src="../images/podarochnyy-nabor-diffuzor-butter-note.jpg" alt="Подарочный набор Butter Note с флаконом диффузора, тремя пробниками и кремовой биркой" title="Подарочные сертификаты и корпоративные мастер-классы">
+              </div>
+              <span class="card-tag">Рубрика 3</span>
+              <h3>Сертификаты и события</h3>
+              <p>Подарочные сертификаты на 6 месяцев, домашние наборы «Сделай сам», камерные девичники и выездные корпоративы в СПб и ЛО.</p>
+            </div>
+            <a href="gifts-events.html" class="btn btn--outline">Выбрать подарок</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЛИД-МАГНИТ + ИНТЕРАКТИВНЫЙ МИНИ-КВИЗ -->
+    <section id="lead-magnet" class="section section--paper-alt">
+      <div class="container">
+        <div class="lead-magnet-box">
+          <div class="split-feature">
+            <div>
+              <span class="eyebrow">Бесплатно · Лид-магнит студии</span>
+              <h2>Забери гайд «Как подобрать аромат для каждой комнаты» + 5 сочетаний масел</h2>
+              <p>
+                Не знаешь, чем отличается аромат для прихожей от нот для спальни, и боишься, что запах окажется слишком приторным? Оставь контакт и сразу получи нашу шпаргалку ароматиста с готовыми пропорциями.
+              </p>
+
+              <form id="leadMagnetForm" class="form-stack">
+                <div>
+                  <label for="leadName" class="field-label">Твоё имя</label>
+                  <input id="leadName" type="text" class="input" placeholder="Например, Анна" required>
+                </div>
+                <div>
+                  <label for="leadContact" class="field-label">E-mail или ник в Telegram</label>
+                  <input id="leadContact" type="text" class="input" placeholder="anna@example.ru или @username" required>
+                </div>
+                <label class="checkbox-row">
+                  <input type="checkbox" required>
+                  <span>Согласна с <a href="privacy.html">политикой конфиденциальности</a> и получением гайда</span>
+                </label>
+                <button type="submit" class="btn btn--primary">Получить гид бесплатно</button>
+              </form>
+            </div>
+
+            <div id="aromaQuiz" class="quiz-card">
+              <span class="card-tag card-tag--bordeaux">Экспресс-тест за 30 секунд</span>
+              <h3>Какой у тебя ароматический тип?</h3>
+              <p style="margin-bottom:16px;">Ответь на 3 вопроса и узнай, какая коллекция Butter Note подойдёт твоему дому.</p>
+
+              <div class="quiz-step">
+                <strong>1. Какое настроение хочется создать вечером дома?</strong>
+                <div class="quiz-options">
+                  <button type="button" class="quiz-option-btn" data-q="q1" data-val="berry">Сочное, тёплое, как ягодный тарт после прогулки</button>
+                  <button type="button" class="quiz-option-btn" data-q="q1" data-val="spice">Уютное и глубокое, как плед и корица в дождь</button>
+                  <button type="button" class="quiz-option-btn" data-q="q1" data-val="floral">Свежее, воздушное, как букет прохладных цветов</button>
+                  <button type="button" class="quiz-option-btn" data-q="q1" data-val="cream">Спокойное, мягкое, с обволакивающей тишиной</button>
+                </div>
+              </div>
+
+              <div class="quiz-step">
+                <strong>2. Куда ты поставишь свой первый диффузор?</strong>
+                <div class="quiz-options">
+                  <button type="button" class="quiz-option-btn" data-q="q2" data-val="berry">На кухню или в гостиную для гостей</button>
+                  <button type="button" class="quiz-option-btn" data-q="q2" data-val="spice">В прихожую или к креслу для чтения</button>
+                  <button type="button" class="quiz-option-btn" data-q="q2" data-val="floral">В ванную или на рабочий стол</button>
+                  <button type="button" class="quiz-option-btn" data-q="q2" data-val="cream">В спальню на прикроватную тумбу</button>
+                </div>
+              </div>
+
+              <div class="quiz-step">
+                <strong>3. Какие ноты ближе всего к твоему вкусу?</strong>
+                <div class="quiz-options">
+                  <button type="button" class="quiz-option-btn" data-q="q3" data-val="berry">Черника, спелая малина, лист смородины</button>
+                  <button type="button" class="quiz-option-btn" data-q="q3" data-val="spice">Цейлонская корица, ваниль и лёгкий дым</button>
+                  <button type="button" class="quiz-option-btn" data-q="q3" data-val="floral">Голубая гортензия, антуриум, белый мускус</button>
+                  <button type="button" class="quiz-option-btn" data-q="q3" data-val="cream">Сливочная база, бобы тонка, светлый кедр</button>
+                </div>
+              </div>
+
+              <div id="quizResult" class="quiz-result" hidden></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КАК ПРОХОДИТ МАСТЕР-КЛАСС -->
+    <section class="section">
+      <div class="container split-feature" style="align-items:center;">
+        <div class="card-media" style="margin-bottom:0;">
+          <img src="../images/process-sozdaniya-diffuzora-spb.jpg" alt="Руки в белых перчатках смешивают ароматические масла пипеткой на мастер-классе Butter Note" title="Процесс создания диффузора с пипеткой на мастер-классе">
+        </div>
+
+        <div>
+          <span class="eyebrow">Длительность ~2 часа · от 2 до 8 человек</span>
+          <h2>Смешай. Вдохни. Оставь дома: как проходит вечер в студии</h2>
+          <ul class="check-list" style="margin-top:20px;">
+            <li><strong>Знакомство с пирамидой:</strong> ведущий-ароматист в лёгкой форме объясняет, как звучат верхние, сердечные и базовые ноты, и помогает не перегрузить формулу.</li>
+            <li><strong>Слепые пробы и подбор:</strong> слушаешь мононоты и пробуешь черновые сочетания на блоттерах, сравнивая пропорции — доверься носу!</li>
+            <li><strong>Сборка флакона 100 мл:</strong> соединяешь свою композицию с безопасной основой диффузора, подбираешь чёрные фибровые палочки.</li>
+            <li><strong>Именная бирка с рецептом:</strong> подписываешь собственный рецепт, упаковываешь флакон в кремовую коробку и забираешь домой.</li>
+          </ul>
+          <button type="button" class="btn btn--primary" data-open-booking data-booking-format="group_mk">Забронировать место</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ОТЗЫВЫ И ГАРАНТИЯ ДОВЕРИЯ (СЛАЙД 14: ЧТО ВЫ РЕАЛЬНЫЕ) -->
+    <section class="section section--espresso">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow eyebrow--light">Реальные впечатления и забота</span>
+          <h2>Истории первых гостей и наши гарантии</h2>
+          <p class="lead-text">Переживаешь, что не хватит опыта или аромат не понравится? Проводим тест на аллергии и помогаем собрать композицию без риска.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card card--dark">
+            <div>
+              <span class="card-tag">Пилотная группа · СПб</span>
+              <h3>Аня, 32 года</h3>
+              <p>«Пришла с подругой в пятницу после работы в центре. Хотелось уюта без очередных свечей из масс-маркета. Собрали ягодно-пряный диффузор с корицей и сливочной нотой — квартира уже второй месяц пахнет именно так, как я задумала».</p>
+            </div>
+            <span style="color:var(--dusty-blue);font-family:var(--font-ui);">Линейка «Корица и дым» · 100 мл</span>
+          </article>
+
+          <article class="card card--dark">
+            <div>
+              <span class="card-tag">Свидание вдвоём</span>
+              <h3>Марина и Денис</h3>
+              <p>«За два часа успели и поспорить о нотах, и смешать один общий аромат для гостиной, и унести второй флакон для спальни. Очень камерно, без суеты и телефонов — ведущая подсказала баланс, чтобы не получилось приторно».</p>
+            </div>
+            <span style="color:var(--dusty-blue);font-family:var(--font-ui);">Парный вечер · 2 флакона</span>
+          </article>
+
+          <article class="card card--dark">
+            <div>
+              <span class="card-tag">Гарантии студии</span>
+              <h3>Спокойная запись без рисков</h3>
+              <ul class="check-list">
+                <li>Бесплатный перенос даты за 48 часов до начала.</li>
+                <li>Предварительный опрос по аллергиям и непереносимости запахов.</li>
+                <li>Гарантированный результат: готовый диффузор 100 мл с рецептом.</li>
+              </ul>
+            </div>
+            <a href="about.html#contacts" class="btn btn--cream btn--sm">Контакты и схема проезда</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ЕДИНЫЙ ФУТЕР (4 структурированные колонки) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-link" style="color:var(--cream);margin-bottom:14px;">
+            <img src="../images/logo-butter-note-light.svg" alt="Светлый логотип Butter Note" title="Butter Note («Нота Масла»)" class="brand-logo" width="46" height="46">
+            <span class="brand-text">
+              <span class="brand-name" style="color:var(--cream);">Butter Note</span>
+              <span class="brand-activity" style="color:var(--dusty-blue);">Нота Масла · студия ароматов</span>
+            </span>
+          </a>
+          <p style="color:rgba(244,235,193,0.82);margin-top:10px;">
+            «Собери свою ноту. Твой дом пахнет тобой». Камерные мастер-классы по созданию ароматических диффузоров в Санкт-Петербурге.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Разделы сайта</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="masterclasses.html">Мастер-классы и афиша</a></li>
+            <li><a href="aroma-guide.html">Гид по ароматам</a></li>
+            <li><a href="gifts-events.html">Подарки и события</a></li>
+            <li><a href="about.html">О студии и контакты</a></li>
+            <li><a href="privacy.html">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Контакты в СПб</h3>
+          <ul class="footer-links">
+            <li>Санкт-Петербург, ул. Рубинштейна, 23, 2 этаж (м. Достоевская, по записи)</li>
+            <li><a href="tel:+78124092814">+7 (812) 409-28-14</a></li>
+            <li><a href="mailto:hello@butternote.spb.ru">hello@butternote.spb.ru</a></li>
+            <li>Ежедневно 11:00–21:00</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Мы в соцсетях</h3>
+          <ul class="footer-links">
+            <li><a href="https://vk.ru/butternote" target="_blank" rel="noopener noreferrer">Сообщество ВКонтакте</a></li>
+            <li><a href="https://t.me/butterNoteSPB" target="_blank" rel="noopener noreferrer">Telegram-канал</a></li>
+            <li><a href="https://yandex.ru/maps/" target="_blank" rel="noopener noreferrer">Яндекс Карты</a></li>
+            <li><a href="https://2gis.ru/spb" target="_blank" rel="noopener noreferrer">2ГИС Санкт-Петербург</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Butter Note («Нота Масла»), Санкт-Петербург. Учебный проект кафедры РиСО СПбГЭУ.</span>
+        <span>Цены носят информационный характер; актуальная стоимость подтверждается при записи.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- МОДАЛЬНОЕ ОКНО ЛИД-МАГНИТА (МГНОВЕННЫЙ ГИД + ПЕЧАТЬ/СКАЧИВАНИЕ) -->
+  <div id="guideModal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="guideGreeting">
+    <div class="modal-card">
+      <button type="button" id="guideModalClose" class="modal-close" aria-label="Закрыть окно">×</button>
+      <span class="eyebrow">Твой бесплатный гайд готов</span>
+      <h3 id="guideGreeting">Гид Butter Note: аромат для каждой комнаты</h3>
+      <ul class="check-list">
+        <li><strong>Прихожая (5–6 палочек):</strong> малина, бергамот, кедр — встречает тёплым акцентом с порога.</li>
+        <li><strong>Гостиная (5 палочек):</strong> корица, ваниль, сливочные ноты — уют для общения.</li>
+        <li><strong>Спальня (3–4 палочки):</strong> голубая гортензия, миндальное молоко, белый мускус — спокойствие без тяжести.</li>
+        <li><strong>Рабочий стол (3 палочки):</strong> утренняя роса, лист смородины — свежесть и фокус.</li>
+        <li><strong>Ванная (4 палочки):</strong> антуриум, светлое дерево, чистый мускус.</li>
+      </ul>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;">
+        <button type="button" id="downloadGuideTextBtn" class="btn btn--primary btn--sm">Скачать памятку (.txt)</button>
+        <button type="button" class="btn btn--outline btn--sm" onclick="window.print()">Распечатать / в PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- МОДАЛЬНОЕ ОКНО ЗАПИСИ -->
+  <div id="bookingModal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="bookingModalTitle">
+    <div class="modal-card">
+      <button type="button" id="bookingModalClose" class="modal-close" aria-label="Закрыть окно">×</button>
+      <span class="eyebrow">Онлайн-запись · СПб</span>
+      <h3 id="bookingModalTitle">Забронировать место или набор</h3>
+      <form id="bookingForm" class="form-stack">
+        <div>
+          <label for="bookingFormat" class="field-label">Формат</label>
+          <select id="bookingFormat" class="select">
+            <option value="group_mk">Групповой мастер-класс (100 мл)</option>
+            <option value="pair_mk">Парный / индивидуальный вечер (для двоих)</option>
+            <option value="tripwire">Сет-знакомство «Первая нота» (трипвайер)</option>
+            <option value="online_mk">Онлайн-мастер-класс с набором материалов</option>
+            <option value="cert_from">Подарочный сертификат (6 месяцев)</option>
+            <option value="corp_from">Выездной мастер-класс / девичник / корпоратив</option>
+          </select>
+        </div>
+        <div>
+          <label for="bookingName" class="field-label">Имя</label>
+          <input id="bookingName" type="text" class="input" placeholder="Как к тебе обращаться?" required>
+        </div>
+        <div>
+          <label for="bookingContact" class="field-label">Телефон или Telegram</label>
+          <input id="bookingContact" type="text" class="input" placeholder="+7 (999) 000-00-00 или @nick" required>
+        </div>
+        <div>
+          <label for="bookingNote" class="field-label">Пожелания, дата или особенности по аллергии</label>
+          <textarea id="bookingNote" rows="3" class="textarea" placeholder="Например: суббота 18:00, люблю ягодные ноты, без резкого жасмина"></textarea>
+        </div>
+        <label class="checkbox-row">
+          <input type="checkbox" required>
+          <span>Соглашаюсь с <a href="privacy.html">политикой конфиденциальности</a></span>
+        </label>
+        <button type="submit" class="btn btn--primary">Отправить заявку</button>
+      </form>
+      <div id="bookingStatus" hidden></div>
+    </div>
+  </div>
+
+  <!-- COOKIE-БАННЕР (Слайд 5: обязательные и необязательные) -->
+  <aside id="cookieBanner" class="cookie-banner" hidden aria-label="Настройки cookies">
+    <strong>Мы используем cookies («печеньки» браузера)</strong>
+    <p style="margin:6px 0 0;color:rgba(244,235,193,0.85);">
+      Они запоминают выбранный формат и помогают делать сайт удобнее. <a href="privacy.html" style="color:var(--dusty-blue);">Подробнее</a>
+    </p>
+    <div class="cookie-toggles">
+      <label class="checkbox-row" style="color:var(--cream);">
+        <input type="checkbox" checked disabled>
+        <span>Обязательные cookies (работа сайта и форм)</span>
+      </label>
+      <label class="checkbox-row" style="color:var(--cream);">
+        <input id="cookieAnalyticsToggle" type="checkbox" checked>
+        <span>Необязательные аналитические cookies</span>
+      </label>
+    </div>
+    <div class="cookie-actions">
+      <button type="button" id="cookieAcceptAll" class="btn btn--cream btn--sm">Принять все</button>
+      <button type="button" id="cookieSaveChoice" class="btn btn--outline-light btn--sm">Сохранить выбор</button>
+    </div>
+  </aside>
+
+  <script src="../js/prices-config.js"></script>
+  <script src="js/main.js?v=motion1"></script>
+</body>
+</html>
